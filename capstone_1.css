@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#brandlogo {
+	width: 40px;
+	height: 40px;
+}
+
+#landing {
+	height: 90vs;
+	background-image: url(https://images.pexels.com/photos/159027/bokeh-blue-light-blue-neon-159027.jpeg?cs=srgb&dl=pexels-pixabay-159027.jpg&fm=jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#selfie {
+	height: 200px;
+	width: 200px;
+	border-radius: 200px; 
+}
+
+#maincontent {
+	background-color: #5D6283;
+}
