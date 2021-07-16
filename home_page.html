@@ -6,78 +6,194 @@
 	<title>My Portfolio</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./capstone_1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<script src="https://kit.fontawesome.com/7f2095d948.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-success bg-white fixed-top">
-		  <a class="navbar-brand" href="#"><img src="./images/brand.png" id="brandlogo"></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Project</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Tools</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Contact</a>
-		      </li>
-		    </ul>
-		  </div>
-	</nav>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+			  <a class="navbar-brand" href="./home_page.html"><img src="./images/brand.png" id="brandlogo"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="./home_page.html">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#navaboutme">About Me</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#navprojects">Skills</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#navtool">Tools</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#navcontact">Contact</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
 
 	<div class="container">
-		<div class="jumbotron text-center d-flex flex-column justify-content-center mt-4 text-white" id="landing">
+		<div class="jumbotron text-center d-flex flex-column justify-content-center mt-5 text-secondary" id="landing">
 			<div class="row">
 				<div class="col-md-6">
 					<img src="./images/NOEL.jpg" id="selfie">
-						<h1>Rene Emmanuel C Zuniga Jr</h1>
-						<h3>Full Stack Web Developer</h3>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 text-center d-flex flex-column justify-content-center">
 						<h1>WELCOME!</h1>
 						<h3>You reached my page, cheers.</h3>
+						<h5 class="animate__animated animate__rotateIn">I'm a Full Stack Web Developer</h5>
 				</div>	
 			</div>
 		</div>
 	</div>
 
-	<div class="container" id="maincontent">
+	<div class="container bg-secondary p-5 mb-2">
 
-		<div class="container">
+		<div class="container text-white text-justify">
 
-			<H2>About Me</H2>
-			
+			<H2 class="text-center mb-5">My Profile!</H2>
+			<p>
+				I'm Rene Emmanuel C. Zuniga Jr you can call me Noel. I'm originally a Financial Management professional but gradually gained a new found interest in web development. I enrolled in Zuitt's coding bootcamp to learn the fundamentals of coding and to equip myself with the knowledge needed to become a full stack developer. Even though I'm just a beginner in this field I'm a hard worker with a strong determination. I would love to work with you. Feel free to browse around my page, don't forget to check out my <a href="./projects_page.html" class="text-decoration-none text-white" target="_blank"><span class="animate__animated animate__pulse">projects</span></a>. 
+			</p>
+			<p class="mb-5">
+				Interested to work with me? Click <a href="#navcontact" class="text-decoration-none text-white"><span class="animate__animated animate__pulse">here</span></a> to keep in touch.
+			</p>
+
+
+		</div>
+
+		<div class="container text-white">
+
+
+
+			<h2 class="text-white text-center mb-5" id="navprojects">Skills</h2>
+			<div class="row">
+				<div class="col-md-6 order-2 order-md-1">
+					<h5 class="text-center">Front End</h5>
+					<a href="./projects_page.html#frontendLINK" class="btn btn-primary btn-block" target="_blank">view project</a>
+				</div>
+				<div class="col-md-6 order-1 order-md-2 d-flex flex-wrap justify-content-center">
+					<img src="./images/logo-html5.png">
+				</div>
+				
+			</div>
+
+			<div class="row my-5">
+				<div class="col-md-6 order-1 order-md-1 d-flex flex-wrap justify-content-center">
+					<img src="./images/logo-nodejs.png">
+				</div>
+				<div class="col-md-6 order-2 order-md-2">
+					<h5 class="text-center">Back End</h5>
+					<a href="./projects_page.html#backendLINK" class="btn btn-primary btn-block" target="_blank">view project</a>
+				</div>
+				
+			</div>
+
+			<div class="row">
+				<div class="col-md-6 order-2 order-md-1">
+					<h5 class="text-center">Full Stack</h5>
+					<a href="./projects_page.html#fullstackLINK" class="btn btn-primary btn-block" target="_blank">view project</a>
+				</div>
+				<div class="col-md-6 order-1 order-md-2 d-flex flex-wrap justify-content-center">
+					<img src="./images/logo-javascript.png">
+				</div>
+				
+			</div>
+
+			<div class="container text-white text-center mt-5">
+				<div>
+					<h2 id="navtool">Tools</h2>
+					<div class="d-flex flex-wrap justify-content-center p-3 mb-4">
+						<img src="./images/logo-css3.png" id="toolslogo">
+						<img src="./images/logo-expressjs.png" id="toolslogo">
+						<img src="./images/logo-git.png" id="toolslogo">
+						<img src="./images/logo-gitlab-ci-cd.png" id="toolslogo">
+						<img src="./images/logo-heroku.png" id="toolslogo">
+						<img src="./images/logo-mongodb.png" id="toolslogo">
+						<img src="./images/logo-postman.png" id="toolslogo">
+						<img src="./images/logo-react.png" id="toolslogo">
+						<img src="./images/logo-sublime-text-3.png" id="toolslogo">
+					</div>	
+				</div>
+			</div>
+
+
+
+
+
 
 
 
 		</div>
 
-		<div class="container">
-
-			<H2>Milestones</H2>
-			
 
 
 
-		</div>
-
-		<div class="container">
-
-			<H2>Reach Me</H2>
-			
 
 
 
+
+		<div class="container text-white">
+
+			<H2 class="text-center mt-5 mb-5" id="navcontact">Looking for me?</H2>
+
+			<div class="row">
+				
+				<div class="col-md-6">
+					<form action="./thank_you.html">
+					<div class="form-group">
+						<label for="fname">Full Name:</label>
+						<input type="text" name="fnameInput" id="fname" class="form-control" required autocomplete>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" name="emailInput" id="email" placeholder="name@example.com" class="form-control" required autocomplete>
+					</div>
+
+					<div class="form-group">
+						<label for="msg">Message:</label>
+						<textarea class="form-control" id="msg" rows="3"></textarea>
+					</div>
+
+					<button type="submit" class="btn btn-primary">SEND</button>
+
+					</form>
+				</div>
+
+				<div class="col-md-6 mt-2 text-center">
+					<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+					<div class="text-center">
+					<p class="mt-5"><i class="fab fa-google-plus-g" id="socialmedialogo"></i>: <a href="mailto:reneemmanuel.zuniga@gmail.com" class="text-decoration-none text-white">reneemmanuel.zuniga@gmail.com</a></p>
+					<p><i class="fas fa-phone-volume" id="socialmedialogo"></i>: <a href="tel:09175986449" class="text-decoration-none text-white"> 0917-598-6449 </a></p>
+
+					<div class="d-flex flex-wrap justify-content-center p-3 mb-4">
+						<a href="https://www.facebook.com/noelzuniga" class="text-decoration-none text-white"><i class="fab fa-facebook" id="socialmedialogo"></i></a>
+						<a href="https://www.instagram.com/noelzuniga24/" class="text-decoration-none text-white"><i class="fab fa-instagram" id="socialmedialogo"></i></a>
+						<a href="https://www.linkedin.com/in/rene-emmanuel-jr-zuniga-6050a41a2/" class="text-decoration-none text-white"><i class="fab fa-linkedin-in" id="socialmedialogo"></i></a>
+						<a href="https://gitlab.com/tuitt/students/batch121/rene-zuniga/capstone1-zuniga" class="text-decoration-none text-white"><i class="fab fa-gitlab" id="socialmedialogo"></i></a>
+					</div>
+
+
+
+					</div>
+				</div>
+
+
+			</div>
 		</div>
 
 	</div>
+
+	<footer class="bg-primary p-1 text-white text-center">
+		<p class="mt-1 mb-0">©2021 Copy Right</p>
+		<p class="mt-0">Rene Emmanuel C Zuniga Jr</p>
+	</footer>
 
 
 

@@ -23,6 +23,16 @@
 	border-radius: 200px; 
 }
 
-#maincontent {
-	background-color: #5D6283;
+
+#gmap_canvas {
+	height: 20vh;
+	width: 100%;
+}
+
+#toolslogo {
+	width: 60px;
+}
+#socialmedialogo {
+	width: 50px;
+	height: 50px;
 }
