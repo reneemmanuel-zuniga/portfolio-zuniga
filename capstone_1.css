@@ -2,6 +2,27 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+  	font-family: "Audiowide", sans-serif;
+ 	letter-spacing: 0.1em;
+
+}
+
+p {
+	font-family: "Open Sans Condensed", sans-serif;
+}
+
+h1 {
+	font-weight: 1000;
+}
+
+h2 {
+	font-weight: 1000;
+	text-shadow: 6px 6px 6px #ababab
+}
+
+
+#anchorParagraph {
+	font-family: "Open Sans Condensed", sans-serif;
 }
 
 #brandlogo {

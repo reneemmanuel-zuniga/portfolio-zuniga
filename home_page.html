@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="./capstone_1.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<script src="https://kit.fontawesome.com/7f2095d948.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=shadow-multiple">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
@@ -43,7 +45,7 @@
 					<img src="./images/NOEL.jpg" id="selfie">
 				</div>
 				<div class="col-md-6 text-center d-flex flex-column justify-content-center">
-						<h1>WELCOME!</h1>
+						<h1 class="font-effect-shadow-multiple">WELCOME</h1>
 						<h3>You reached my page, cheers.</h3>
 						<h5 class="animate__animated animate__rotateIn">I'm a Full Stack Web Developer</h5>
 				</div>	
@@ -55,12 +57,12 @@
 
 		<div class="container text-white text-justify">
 
-			<H2 class="text-center mb-5">My Profile!</H2>
+			<H2 class="text-center mb-5" id="navaboutme">My Profile!</H2>
 			<p>
-				I'm Rene Emmanuel C. Zuniga Jr you can call me Noel. I'm originally a Financial Management professional but gradually gained a new found interest in web development. I enrolled in Zuitt's coding bootcamp to learn the fundamentals of coding and to equip myself with the knowledge needed to become a full stack developer. Even though I'm just a beginner in this field I'm a hard worker with a strong determination. I would love to work with you. Feel free to browse around my page, don't forget to check out my <a href="./projects_page.html" class="text-decoration-none text-white" target="_blank"><span class="animate__animated animate__pulse">projects</span></a>. 
+				I'm Rene Emmanuel C. Zuniga Jr you can call me Noel. I'm originally a Financial Management professional but gradually gained a new found interest in web development. I enrolled in Zuitt's coding bootcamp to learn the fundamentals of coding and to equip myself with the knowledge needed to become a full stack developer. Even though I'm just a beginner in this field I'm a hard worker with a strong determination. I would love to work with you. Feel free to browse around my page, don't forget to check out my <a href="./projects_page.html" class="text-decoration-none text-white animate__animated animate__backOutDown" target="_blank" id="anchorParagraph" class="animate__animated animate__backOutDown">projects</a>. 
 			</p>
 			<p class="mb-5">
-				Interested to work with me? Click <a href="#navcontact" class="text-decoration-none text-white"><span class="animate__animated animate__pulse">here</span></a> to keep in touch.
+				Interested to work with me? Click <a href="#navcontact" class="text-decoration-none text-white animate__animated animate__backOutDown" id="anchorParagraph">here</a> to keep in touch.
 			</p>
 
 
@@ -72,34 +74,43 @@
 
 			<h2 class="text-white text-center mb-5" id="navprojects">Skills</h2>
 			<div class="row">
-				<div class="col-md-6 order-2 order-md-1">
-					<h5 class="text-center">Front End</h5>
-					<a href="./projects_page.html#frontendLINK" class="btn btn-primary btn-block" target="_blank">view project</a>
+				<div class="col-md-6 order-2 order-md-1 text-center d-flex flex-column justify-content-center">
+					<h5 class="text-center mt-2">Front End</h5>
+					<p class="text-justify">
+						A front end developer has one general responsibility: to ensure that website visitors can easily interact with the page. They do this through the combination of design, technology and programming to code a website's appearance, as well as taking care of debugging.
+					</p>
+					<a href="./projects_page.html#frontendLINK" class="btn btn-primary btn-block mb-2" target="_blank">view project</a>
 				</div>
 				<div class="col-md-6 order-1 order-md-2 d-flex flex-wrap justify-content-center">
-					<img src="./images/logo-html5.png">
+					<img src="./images/FrontEnd.PNG" class="img-fluid">
 				</div>
 				
 			</div>
 
 			<div class="row my-5">
 				<div class="col-md-6 order-1 order-md-1 d-flex flex-wrap justify-content-center">
-					<img src="./images/logo-nodejs.png">
+					<img src="./images/BackEnd.PNG" class="img-fluid">
 				</div>
-				<div class="col-md-6 order-2 order-md-2">
-					<h5 class="text-center">Back End</h5>
-					<a href="./projects_page.html#backendLINK" class="btn btn-primary btn-block" target="_blank">view project</a>
+				<div class="col-md-6 order-2 order-md-2 text-center d-flex flex-column justify-content-center">
+					<h5 class="text-center mt-2">Back End</h5>
+					<p class="text-justify">
+						Back end developers are responsible for creating and maintaining technology at the back end of a website (the server, database and application). The attractive visuals created by designers, UX professionals and front end developers couldn't exist without the technology provided by a back end developer.
+					</p>
+					<a href="./projects_page.html#backendLINK" class="btn btn-primary btn-block mb-2" target="_blank">view project</a>
 				</div>
 				
 			</div>
 
 			<div class="row">
-				<div class="col-md-6 order-2 order-md-1">
-					<h5 class="text-center">Full Stack</h5>
-					<a href="./projects_page.html#fullstackLINK" class="btn btn-primary btn-block" target="_blank">view project</a>
+				<div class="col-md-6 order-2 order-md-1 text-center d-flex flex-column justify-content-center">
+					<h5 class="text-center mt-2">Full Stack</h5>
+					<p class="text-justify">
+						A full stack developer is a web developer or engineer who works with both the front and back ends of a website or application. In this sense, they provide an end-to-end service, and can be involved in projects that involve databases and building user-facing websites.
+					</p>
+					<a href="./projects_page.html#fullstackLINK" class="btn btn-primary btn-block mb-2" target="_blank">view project</a>
 				</div>
 				<div class="col-md-6 order-1 order-md-2 d-flex flex-wrap justify-content-center">
-					<img src="./images/logo-javascript.png">
+					<img src="./images/FullStack.jpg" class="img-fluid">
 				</div>
 				
 			</div>
@@ -117,6 +128,9 @@
 						<img src="./images/logo-postman.png" id="toolslogo">
 						<img src="./images/logo-react.png" id="toolslogo">
 						<img src="./images/logo-sublime-text-3.png" id="toolslogo">
+						<img src="./images/logo-nodejs.png" id="toolslogo">
+						<img src="./images/logo-html5.png" id="toolslogo">
+						<img src="./images/logo-javascript.png" id="toolslogo">
 					</div>	
 				</div>
 			</div>
